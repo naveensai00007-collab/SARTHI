@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B35" />
+      <stop offset="50%" stop-color="#E85D04" />
+      <stop offset="100%" stop-color="#1B5E20" />
+    </linearGradient>
+    <linearGradient id="shield" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FFF8F0" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#bg)" />
+  <circle cx="256" cy="180" r="70" fill="#FFB703" opacity="0.9" />
+  <!-- Road path perspective -->
+  <polygon points="170,300 342,300 420,460 92,460" fill="#1A1A1A" />
+  <!-- Road dashes -->
+  <line x1="256" y1="310" x2="256" y2="340" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" />
+  <line x1="256" y1="360" x2="256" y2="400" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" />
+  <line x1="256" y1="420" x2="256" y2="455" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" />
+  <!-- Shield and Wheel -->
+  <path d="M256,70 L340,110 L340,210 C340,270 256,320 256,320 C256,320 172,270 172,210 L172,110 Z" fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linejoin="round" />
+  <!-- Charioteer / Steering wheel emblem -->
+  <circle cx="256" cy="190" r="38" fill="none" stroke="#FF6B35" stroke-width="10" />
+  <circle cx="256" cy="190" r="10" fill="#1B5E20" />
+  <line x1="256" y1="152" x2="256" y2="228" stroke="#1B5E20" stroke-width="6" />
+  <line x1="218" y1="190" x2="294" y2="190" stroke="#1B5E20" stroke-width="6" />
+  <line x1="229" y1="163" x2="283" y2="217" stroke="#1B5E20" stroke-width="6" />
+  <line x1="229" y1="217" x2="283" y2="163" stroke="#1B5E20" stroke-width="6" />
+</svg>

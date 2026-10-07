@@ -1,0 +1,19 @@
+{
+  "id": "/",
+  "name": "Sarthi - Aapka Raasta, Aapki Zimmedari",
+  "short_name": "Sarthi",
+  "description": "National Road Safety, RTO Exam Preparation & Challan-Proof Licensing Platform for India.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FFF8F0",
+  "theme_color": "#FF6B35",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

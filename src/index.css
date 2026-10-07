@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --primary: #FF6B35;
+    --primary-hover: #E85D04;
+    --secondary: #1B5E20;
+    --bg-warm: #FFF8F0;
+    --text-primary: #1A1A1A;
+    --text-secondary: #6B7280;
+    --accent: #0EA5E9;
+    --success: #10B981;
+    --danger: #EF4444;
+  }
+
+  .dark {
+    --primary: #FF7D4D;
+    --primary-hover: #FF6B35;
+    --secondary: #2E7D32;
+    --bg-warm: #121417;
+    --text-primary: #F3F4F6;
+    --text-secondary: #9CA3AF;
+  }
+
+  body {
+    background-color: var(--bg-warm);
+    color: var(--text-primary);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+
+@keyframes gentle-shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+.animate-gentle-shake {
+  animation: gentle-shake 0.4s ease-in-out;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.02); opacity: 0.95; }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 0.6s ease-in-out;
+}
+
+/* Custom scrollbars for clean UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(107, 114, 128, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(107, 114, 128, 0.35);
+}
+
+@media print {
+  header,
+  nav,
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+}

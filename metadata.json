@@ -1,0 +1,6 @@
+{
+  "name": "Sarthi - National Road Safety & RTO Licensing Platform",
+  "description": "Sarthi helps every Indian driver learn road rules, pass the RTO learner's test, and drive challan-proof as a confident, responsible citizen.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
